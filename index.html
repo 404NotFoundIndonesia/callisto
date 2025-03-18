@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="windows/output.css">
+  </head>
+  <body class="bg-neutral-100 flex flex-col h-screen overflow-hidden">
+    <div class="text-center border-b border-black/10 py-2 bg-white dark:bg-neutral-700 dark:text-white shrink-2">
+      <h1 class="text-lg font-medium">
+        Callisto
+      </h1>
+    </div>
+    <div class="p-4 dark:bg-neutral-800 h-full grow-1 overflow-auto">
+
+      <div class="font-medium text-lg dark:text-white">Buttons</div>
+      <div class="flex flex-col rounded-[8px] border divide-y divide-black/10 border-black/10 dark:border-white/10 bg-neutral-50 dark:bg-neutral-700">
+        <div class="flex flex-wrap gap-1 p-3">
+          <button class="btn">btn</button>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-info">Info</button>
+          <button class="btn btn-light">Light</button>
+          <button class="btn btn-dark">Dark</button>
+          <button disabled="true" class="btn btn-primary">Primary</button>
+        </div>
+        <div class="p-3">
+          <pre class="p-0 bg-neutral-800 text-white rounded-lg p-4 overflow-auto">&lt;button class="btn"&gt;btn&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-light"&gt;Light&lt;/button&gt;
+&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
+&lt;button disabled="true" class="btn btn-primary"&gt;Primary&lt;/button&gt;</pre>
+        </div>
+      </div>
+
+      <div class="font-medium text-lg dark:text-white">Inputs</div>
+      <div class="flex flex-col rounded-[8px] border divide-y divide-black/10 border-black/10 dark:border-white/10 bg-neutral-50 dark:bg-neutral-800">
+        <div class="flex flex-col items-start gap-1 p-3">
+          <input type="text" placeholder="find a thing">
+          <input class="input-primary" type="text" placeholder="Primary">
+          <textarea name="" id="">yeah</textarea>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
+
+<!-- 
+npx @tailwindcss/cli -i windows/main.css -o windows/output.css --watch 
+-->
